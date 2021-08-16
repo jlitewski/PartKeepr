@@ -3,7 +3,7 @@
   "description": "Open Source Inventory Software",
   "type": "project",
   "homepage": "http://www.partkeepr.org",
-  "license": "GPL-3.0+",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Timo A. Hummel",
@@ -23,7 +23,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/felicitus/EscapeWSSEAuthenticationBundle"
+      "url": "https://github.com/hhmarco/EscapeWSSEAuthenticationBundle"
     },
     {
       "type": "vcs",
@@ -31,59 +31,64 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/partkeepr/FR3DLdapBundle"
+      "url": "https://github.com/jlitewski/sprite-generator"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/partkeepr/sprite-generator"
+      "url": "https://github.com/jlitewski/composer-assets-installer"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jlitewski/remote-file-loader"
     }
     ],
   "require": {
-    "php": ">=5.6.0",
+    "php": ">=7.4",
+    "composer-plugin-api": "~2.0",
     "fr3d/ldap-bundle": "dev-master",
-    "symfony/symfony": "~2.7",
-    "incenteev/composer-parameter-handler": "~2.0",
-    "doctrine/orm": "~2.5",
-    "doctrine/doctrine-bundle": "~1.6",
-    "twig/extensions": "*",
-    "twig/twig": "~1.35",
-    "symfony/assetic-bundle": "~2.8.2",
-    "symfony/swiftmailer-bundle": "~2.3",
-    "symfony/monolog-bundle": "~2.4",
-    "sensio/distribution-bundle": "~4.0.0",
-    "sensio/framework-extra-bundle": "~3.0",
-    "nelmio/api-doc-bundle": "~2.9@dev",
-    "friendsofsymfony/rest-bundle": "~1.7.1",
+    "symfony/flex": "^1.13",
+    "incenteev/composer-parameter-handler": "^2.1",
+    "doctrine/orm": "^2.9",
+    "doctrine/doctrine-bundle": "^2.4",
+    "twig/extra-bundle": "^3.0",
+    "twig/twig": "^3.0",
+    "symfony/webpack-encore-bundle": "^1.12",
+    "symfony/swiftmailer-bundle": "^3.5",
+    "symfony/monolog-bundle": "^3.0",
+    "sensio/distribution-bundle": "~5.0",
+    "sensio/framework-extra-bundle": "^6.1",
+    "nelmio/api-doc-bundle": "^4.4",
+    "friendsofsymfony/rest-bundle": "^3.0",
     "partkeepr/extjs6": "dev-master",
-    "fortawesome/font-awesome": "4.*",
-    "doctrine/doctrine-fixtures-bundle": "2.2.*",
-    "dunglas/api-bundle": "dev-master#b30de689f94410c7dc0e449f2ecc15cfa8e70f54",
+    "fortawesome/font-awesome": "^5.15",
+    "doctrine/doctrine-fixtures-bundle": "^3.4",
+    "api-platform/api-pack": "^1.3.0",
     "brainbits/fugue-icons-bundle": "^3.5",
-    "imagine/imagine": "^0.6.2",
-    "ramsey/uuid": "^3.1.0",
-    "moontoast/math": "^1.1",
-    "doctrine/migrations": "dev-master",
-    "doctrine/doctrine-migrations-bundle": "dev-master",
-    "stof/doctrine-extensions-bundle": "~1.1@dev",
-    "friendsofsymfony/user-bundle": "~2.0@dev",
-    "escapestudios/wsse-authentication-bundle": "dev-advancedUserInterface",
+    "imagine/imagine": "^1.2",
+    "ramsey/uuid": "^4.2",
+    "brick/math": "^0.9",
+    "doctrine/migrations": "^3.1",
+    "doctrine/doctrine-migrations-bundle": "^3.1",
+    "stof/doctrine-extensions-bundle": "^1.6",
+    "friendsofsymfony/user-bundle": "^2.x-dev",
+    "escapestudios/wsse-authentication-bundle": "dev-master",
     "atelierspierrot/famfamfam-silk-sprite": "^1.0",
-    "reputation-vip/composer-assets-installer": "^1.0",
-    "partkeepr/remote-file-loader": "dev-master",
-    "nfq-alpha/sprite-bundle": "dev-min-image-fix",
-    "symfony/property-access": "^2.7",
+    "reputation-vip/composer-assets-installer": "dev-master",
+    "partkeepr/remote-file-loader": "dev-next-gen",
+    "nfq-alpha/sprite-bundle": "dev-next-gen",
+    "symfony/property-access": "^4.0",
     "sonata-project/exporter": "^1.4",
-    "knplabs/knp-gaufrette-bundle": "^0.2.0",
-    "phpseclib/phpseclib": "~2.0",
-    "snc/redis-bundle": "^1.1",
+    "knplabs/knp-gaufrette-bundle": "^0.7",
+    "phpseclib/phpseclib": "^3.0.7",
+    "snc/redis-bundle": "^3",
     "predis/predis": "^1.0",
-    "guzzlehttp/guzzle": "6.2.2"
+    "guzzlehttp/guzzle": "^7.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "5.5",
+    "phpunit/phpunit": "^9.5",
     "codeclimate/php-test-reporter": "dev-master",
-    "liip/functional-test-bundle": "~1.1",
-    "phing/phing": "2.*"
+    "liip/functional-test-bundle": "^4.0",
+    "phing/phing": "^2.16"
   },
   "autoload": {
     "psr-0": {
